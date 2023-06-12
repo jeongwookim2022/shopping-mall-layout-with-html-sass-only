@@ -1,0 +1,61 @@
+/* body */
+
+/* PROFILE */
+img {
+  border-radius: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+.profile i {
+  font-size: 13px;
+  display: block;
+}
+.profile .badge {
+  cursor: pointer;
+}
+.profile h5 {
+  text-align: left;
+}
+.profile .profile-info {
+  text-align: left;
+}
+.profile-info-detail {
+  text-align: left;
+}
+.profile-info-detail p {
+  margin-bottom: 4px;
+}
+
+/* DETAIL */
+.detail-nav p {
+  text-align: center;
+  cursor: pointer;
+}
+
+/* SNS */
+.sns a {
+  cursor: pointer;
+  font-size: 40px;
+}
+.sns#github {
+  text-align: right;
+}
+.sns#github i {
+  color: black;
+}
+.sns#instagram {
+  text-align: left;
+}
+.message p,
+h5 {
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .profile .border-end {
+    border-right: 0 !important;
+  }
+  .works {
+    text-align: center;
+  }
+}
