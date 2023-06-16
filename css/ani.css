@@ -25,25 +25,29 @@
   }
 }
 
-/* HW 흔들버튼 */
+/* HW1 흔들버튼 */
 .ani-btn {
   width: 100px;
   height: 50px;
 }
 .ani-btn:hover {
   animation-name: shakyBtn;
-  animation-duration: 0.5s;
+  animation-duration: 1s;
+  /* animation-iteration-count: 2; */
 }
 
 @keyframes shakyBtn {
   0% {
-    transform: rotate(-22.5deg);
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-8deg);
   }
   50% {
-    transform: rotate(22.5deg);
+    transform: rotate(8deg);
   }
   75% {
-    transform: rotate(-22.5deg);
+    transform: rotate(-8deg);
   }
   100% {
     transform: translateX(0px);
@@ -52,21 +56,17 @@
 /* HW 플러스 기호 */
 .ani-plus:hover {
   animation-name: plusEmoji;
-  animation-duration: 2s;
+  animation-duration: 1s;
 }
 @keyframes plusEmoji {
   0% {
     transform: rotate(0);
   }
-  50% {
-    transform: rotate(-45deg);
-  }
-  75% {
-    transform: rotate(45deg);
+  25% {
+    transform: rotate(-15deg);
   }
   100% {
-    font-size: 125%;
-    /* transform: rotate(-45deg); */
+    transform: rotate(45deg) scale(1.5);
   }
 }
 /* HW3 */
@@ -104,26 +104,10 @@ p {
 
 @keyframes menuBar {
   0% {
-    /* opacity: 1; */
-    transform: skew(-50deg);
     transform: translate(-100px);
   }
-  25% {
-    transform: skew(-30deg);
-    transform: translate(40px);
-  }
   50% {
-    transform: skew(-30deg);
-    /* transform: translate(40px); */
-  }
-  60% {
-    transform: skew(-30deg);
-    /* transform: translate(70px); */
-    /* transform: translate(20px); */
-  }
-  70% {
-    transform: skew(-30deg);
-    /* transform: translate(20px); */
+    transform: translate(40px) skew(-30deg);
   }
   100% {
     transform: skew(0deg);
