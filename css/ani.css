@@ -1,0 +1,131 @@
+.ani-text {
+  /* transform: rotate(355deg); */
+  text-align: center;
+}
+.ani-text:hover {
+  animation-name: ani-go-back;
+  animation-duration: 2s;
+}
+
+@keyframes ani-go-back {
+  0% {
+    transform: translateX(0px);
+  }
+  25% {
+    transform: translateX(-100px);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  75% {
+    transform: translateX(100px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+/* HW 흔들버튼 */
+.ani-btn {
+  width: 100px;
+  height: 50px;
+}
+.ani-btn:hover {
+  animation-name: shakyBtn;
+  animation-duration: 0.5s;
+}
+
+@keyframes shakyBtn {
+  0% {
+    transform: rotate(-22.5deg);
+  }
+  50% {
+    transform: rotate(22.5deg);
+  }
+  75% {
+    transform: rotate(-22.5deg);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+/* HW 플러스 기호 */
+.ani-plus:hover {
+  animation-name: plusEmoji;
+  animation-duration: 2s;
+}
+@keyframes plusEmoji {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(-45deg);
+  }
+  75% {
+    transform: rotate(45deg);
+  }
+  100% {
+    font-size: 125%;
+    /* transform: rotate(-45deg); */
+  }
+}
+/* HW3 */
+.menu-bar-bg {
+  background-color: black;
+  width: 80px;
+  position: fixed;
+  height: 100%;
+  transition: all 1s;
+  z-index: 10;
+}
+.menu-bar-bg h4,
+p {
+  color: white;
+  text-align: center;
+}
+.menu-bar-bg p {
+  color: white;
+  text-align: left;
+}
+.menu-bar-bg p {
+  transform: translate(-100px);
+  transition: all 1s;
+}
+.menu-bar-bg:hover {
+  width: 260px;
+}
+.menu-bar-bg:hover > p {
+  opacity: 1;
+  animation-name: menuBar;
+  animation-duration: 1s;
+  text-align: center;
+  transform: translate(0);
+}
+
+@keyframes menuBar {
+  0% {
+    /* opacity: 1; */
+    transform: skew(-50deg);
+    transform: translate(-100px);
+  }
+  25% {
+    transform: skew(-30deg);
+    transform: translate(40px);
+  }
+  50% {
+    transform: skew(-30deg);
+    /* transform: translate(40px); */
+  }
+  60% {
+    transform: skew(-30deg);
+    /* transform: translate(70px); */
+    /* transform: translate(20px); */
+  }
+  70% {
+    transform: skew(-30deg);
+    /* transform: translate(20px); */
+  }
+  100% {
+    transform: skew(0deg);
+  }
+}

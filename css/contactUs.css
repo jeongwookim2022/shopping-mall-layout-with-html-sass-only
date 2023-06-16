@@ -1,0 +1,58 @@
+.container {
+  width: 30%;
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container > h1 {
+  /* width: 50%; */
+}
+
+.email input {
+  width: 55%;
+  box-sizing: border-box;
+}
+.email h6 {
+  margin-bottom: 5px;
+}
+
+.name {
+  overflow: hidden;
+}
+.name-item {
+  width: 25%;
+  float: left;
+  margin-right: 5%;
+}
+.name-item#last {
+  margin-right: 0;
+}
+.name input {
+  /* max-width: 100%; */
+  width: 100%;
+  box-sizing: border-box;
+}
+.name h6 {
+  margin-bottom: 5px;
+}
+
+.message input {
+  /* max-width: 100%; */
+  width: 55%;
+  height: 100px;
+  box-sizing: border-box;
+}
+.message h6 {
+  margin-bottom: 5px;
+}
+
+.footer-btn .subscribe {
+  margin: 20px 5px 0 auto;
+  font-size: 16px;
+}
+
+.footer-btn .submit {
+  background-color: gold;
+  color: azure;
+  border: 0;
+}

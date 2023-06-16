@@ -1,0 +1,163 @@
+body {
+  margin: 0;
+}
+
+/* padding 1px은 margin collapse 방지용 */
+.main-background {
+  width: 100%;
+  height: 500px;
+  background-image: url("../shoes.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 0.1px;
+
+  text-align: center;
+  /* position: relative; */
+  /* word-break: break-all;
+  text-align: center; */
+}
+.main-title {
+  color: white;
+  font-size: 40px;
+  margin-top: 100px;
+  /* position: absolute; */
+}
+.main-background button {
+  margin: 20px 30px 0;
+  background-color: burlywood;
+  border: 2px solid black;
+  border-radius: 4px;
+  padding: 4px;
+  width: 25%;
+  max-width: 100px;
+
+  /* position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 100px;
+ */
+}
+/* position값 있을 때 가운데 정렬 */
+/*position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 5px; */
+/* 장점
+- 좌표이동
+- 내 위치 기준 OR 부모 위치 기준 가능
+- 공중에 뜸.*/
+
+.text-box {
+  background-color: rgb(199, 195, 195);
+  position: relative;
+  margin: auto;
+  width: 80%;
+  height: 20%;
+  max-width: 600px;
+  text-align: center;
+  padding: 10px;
+  word-break: break-all;
+  bottom: 50px;
+  max-width: 400px;
+}
+
+/* 부모 요소 스타일에 */
+/* 상하정렬: height & align-items */
+/* 상하좌우 완전 정렬: height & align-items & justify-content*/
+.nav-container {
+  background-color: burlywood;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  padding: 15px;
+}
+.nav-item {
+  font-size: 20px;
+}
+.nav-item:nth-child(1) {
+  flex-grow: 1;
+  font-size: 40px;
+}
+.nav-item:nth-child(2) {
+  margin-right: 20px;
+  font-size: 20px;
+}
+.nav-item:nth-child(3) {
+  padding-right: 10px;
+  font-size: 20px;
+}
+
+/* Products */
+.shop-bg {
+  background-color: burlywood;
+  padding: 20px;
+}
+.shop-container {
+  display: flex;
+  margin: auto;
+  max-width: 80%;
+}
+.shop-item {
+  width: 33%;
+  padding: 20px;
+}
+.shop-item-img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.shop-item .shop-item-animation {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.overlay > span {
+  font-size: 250%;
+}
+.overlay-box {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.shop-item .shop-item-animation .overlay-box .overlay {
+  position: absolute;
+  background-color: black;
+  color: white;
+  width: 100%;
+  height: 100%;
+  top: 100%;
+  opacity: 0;
+  /* 여기에 transition해야 내려갈 때 자연스럽게 내려감*/
+  transition: all 1s;
+}
+.shop-item .shop-item-animation .overlay-box:hover > .overlay {
+  opacity: 0.5;
+  transform: translateY(-100%);
+  height: 20%;
+}
+/* .shop-item .shop-item-animation .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  transition: all 0.4s;
+}
+.shop-item .shop-item-animation .overlay:hover {
+  background-color: black;
+  opacity: 0.5;
+} */
+
+/* RESPONSIVE LAYOUT */
+/* - Set breakpoint */
+@media screen and (max-width: 950px) {
+  .main-title {
+    font-size: 20px;
+  }
+  .overlay span {
+    font-size: 100%;
+  }
+}

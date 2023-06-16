@@ -1,0 +1,24 @@
+@font-face {
+  font-family: "NANUM";
+  src: url("../fonts/NanumSquare_acR.ttf");
+}
+
+div,
+input,
+textarea {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "NANUM";
+}
+
+/* 폰트 부드럽게 만드는 꿀팁 */
+p,
+h4,
+h3,
+h2,
+h1,
+span {
+  transform: rotate(0.03deg);
+}

@@ -1,0 +1,92 @@
+body {
+  box-sizing: border-box;
+}
+
+.bg-blue {
+  width: 80%;
+  /* max-width: 400px; */
+  height: 300px;
+  margin: auto;
+  background-color: #c2d3de;
+  padding: 20px;
+}
+table {
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+  border-collapse: collapse;
+}
+
+td,
+th {
+  /* border: 1px solid black; */
+  padding: 20px;
+  border-bottom: 1px solid #c2d3de;
+}
+
+tbody tr td:nth-child(2) {
+  text-align: center;
+}
+tbody tr td:nth-child(3) {
+  text-align: center;
+}
+tbody tr td:nth-child(4) {
+  text-align: right;
+}
+tbody tr td:nth-child(5) {
+  text-align: right;
+}
+thead tr th:nth-child(2) {
+  width: 100px;
+}
+thead tr th:nth-child(3) {
+  text-align: center;
+}
+thead tr th:nth-child(4) {
+  text-align: right;
+}
+thead tr th:nth-child(5) {
+  text-align: right;
+}
+
+img {
+  display: block;
+  margin: auto;
+}
+
+.buy-btn {
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+}
+.red {
+  background-color: red;
+}
+/* 순서 중요 hover focus active */
+.buy-btn:hover {
+  background-color: gold;
+}
+.buy-btn:focus {
+  background-color: black;
+}
+.buy-btn:active {
+  background-color: purple;
+}
+
+.input-test {
+  font-size: 20px;
+}
+.input-test:focus {
+  border: 5px solid yellow;
+}
+.link-test {
+  text-decoration: none;
+}
+.link-test:link {
+  color: red;
+}
+.link-test:visited {
+  color: gold;
+}
